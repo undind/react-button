@@ -42,6 +42,7 @@
     "@types/react-dom": "^16.9.8",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
+    "auto-changelog": "^2.2.1",
     "babel-eslint": "^10.1.0",
     "commitizen": "^4.2.2",
     "cross-env": "^7.0.3",
@@ -90,5 +91,11 @@
     "github": {
       "release": true
     }
+  },
+  "git": {
+    "changelog": "auto-changelog --stdout --commit-limit false -u --template https://raw.githubusercontent.com/release-it/release-it/master/templates/changelog-compact.hbs"
+  },
+  "hooks": {
+    "after:bump": "auto-changelog -p"
   }
 }
