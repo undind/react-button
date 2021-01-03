@@ -1,3 +1,3 @@
-import ReactButton from './Button'
+import ReactButton from './Button';
 
-export default ReactButton
+export default ReactButton;
