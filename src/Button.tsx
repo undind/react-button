@@ -4,6 +4,7 @@ import * as React from 'react';
 interface Props {
   text: string;
   onClick: (e: any) => void;
+  
 }
 
 const ReactInput = ({ text, onClick }: Props) => {
