@@ -7,7 +7,6 @@ interface Props {
 }
 
 const ReactInput = ({ text, onClick }: Props) => {
-  
   return (
     <button className='btn' onClick={(e: any) => onClick(e)}>
       {text}
