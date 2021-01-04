@@ -1,12 +1,12 @@
 import './_style.scss';
 import * as React from 'react';
 
-interface Props {
+export interface Props {
   text: string;
   onClick: (e: any) => void;
 }
 
-const ReactInput = ({ text, onClick }: Props) => {
+const Button = ({ text, onClick }: Props) => {
   return (
     <button className='btn' onClick={(e: any) => onClick(e)}>
       {text}
@@ -14,4 +14,4 @@ const ReactInput = ({ text, onClick }: Props) => {
   );
 };
 
-export default ReactInput;
+export default Button;
