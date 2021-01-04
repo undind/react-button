@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer, { ReactTestRenderer } from 'react-test-renderer';
+import { mount, CommonWrapper } from 'enzyme';
 import ReactButton from './Button';
 
 const props = {
@@ -8,21 +8,16 @@ const props = {
 };
 
 describe('Test Suites button', () => {
-  let component: ReactTestRenderer;
-  beforeAll(() => {
-    component = renderer.create(<ReactButton {...props} />);
+  let wrapper: CommonWrapper;
+  beforeEach(() => {
+    wrapper = mount(<ReactButton {...props} />);
   });
 
-  afterAll(() => {
+  afterEach(() => {
     jest.clearAllMocks();
-    component.unmount();
   });
 
-  it('Render component', () => {
-    expect(component).toBeTruthy();
-  });
-
-  it('Check props', () => {
-    expect(component.root.props).toEqual(props);
+  it('should render my component', () => {
+    expect(wrapper).toBeTruthy();
   });
 });

@@ -28,7 +28,6 @@ export default {
     sass({ insert: true }),
     typescript({
       rollupCommonJSResolveHack: true,
-      exclude: '**/__tests__/**',
       clean: true
     }),
     commonjs({
