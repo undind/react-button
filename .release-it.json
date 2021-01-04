@@ -1,7 +1,7 @@
 {
   "git": {
     "commitMessage": "chore: release v${version}",
-    "changelog": "npx auto-changelog --stdout --commit-limit false --unreleased --template ./changelog-template.hbs"
+    "changelog": "npx auto-changelog --stdout --commit-limit false --unreleased"
   },
   "github": {
     "release": true
