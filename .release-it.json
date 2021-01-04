@@ -7,6 +7,6 @@
     "release": true
   },
   "hooks": {
-    "after:bump": "auto-changelog -p && git add CHANGELOG.md"
+    "after:bump": "auto-changelog -p"
   }
 }
