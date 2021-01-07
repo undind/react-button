@@ -24,7 +24,7 @@
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "deploy": "gh-pages -d storybook-static/",
-    "release": "npm run test && release-it",
+    "release": "npm run test && read -p 'GITHUB_TOKEN: ' GITHUB_TOKEN && export GITHUB_TOKEN=$GITHUB_TOKEN && release-it --",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
