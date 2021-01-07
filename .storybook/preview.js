@@ -1,4 +1,16 @@
+import theme from './theme';
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
-}
+  options: {
+    storySort: (a, b) => {
+      const aName = a[0];
+      const bName = b[0];
+
+      return aName < bName ? 1 : -1;
+    }
+  },
+  layout: 'centered',
+  docs: {
+    theme
+  }
+};
