@@ -23,6 +23,7 @@
     "test:lint": "eslint .",
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
+    "predeploy": "build-storybook",
     "deploy": "gh-pages -d storybook-static/",
     "release": "npm run test && dotenv release-it --",
     "storybook": "start-storybook -p 6006",
