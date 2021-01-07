@@ -21,7 +21,7 @@ describe('Test Suites button', () => {
     expect(wrapper).toBeTruthy();
   });
 
-  it('test', () => {
+  it('test sadas', () => {
     expect(wrapper).toBeTruthy();
   });
 });
