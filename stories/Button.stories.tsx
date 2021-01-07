@@ -14,5 +14,6 @@ const Template: Story<Props> = (args) => <Button {...args} />;
 export const Simple = Template.bind({});
 Simple.args = {
   text: 'Click',
+  gradient: true,
   onClick: () => ({})
 };
