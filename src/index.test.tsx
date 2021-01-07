@@ -20,4 +20,8 @@ describe('Test Suites button', () => {
   it('should render my component', () => {
     expect(wrapper).toBeTruthy();
   });
+
+  it('test', () => {
+    expect(wrapper).toBeTruthy();
+  });
 });
