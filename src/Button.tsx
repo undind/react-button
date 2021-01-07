@@ -1,5 +1,5 @@
 import './_style.scss';
-import * as React from 'react';
+import React, { useState } from 'react';
 import classNames from 'classnames';
 
 export interface Props {
@@ -9,12 +9,16 @@ export interface Props {
 }
 
 const Button = ({ text, classString, onClick }: Props) => {
+  const [state, setState] = useState(text);
   return (
     <button
       className={classNames('btn', `${classString}`)}
-      onClick={(e: any) => onClick(e)}
+      onClick={(e: any) => {
+        setState('test');
+        onClick(e);
+      }}
     >
-      {text}
+      {state}
     </button>
   );
 };

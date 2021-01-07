@@ -9,6 +9,7 @@ build
 dist
 .rpt2_cache
 .eslintcache
+storybook-static
 
 # misc
 .DS_Store

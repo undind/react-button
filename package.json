@@ -4,6 +4,7 @@
   "description": "React button",
   "author": "undind",
   "license": "MIT",
+  "homepage": "https://undind.github.io/react-button",
   "repository": "undind/react-button",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -22,8 +23,7 @@
     "test:lint": "eslint .",
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
-    "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build",
+    "deploy": "gh-pages -d storybook-static/",
     "release": "npm run test && release-it",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
